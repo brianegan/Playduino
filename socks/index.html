@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SockDuino!!!!!!!!!</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      var socket = io.connect('http://localhost'),
+          rotationRatio =  360 / 1023,
+          rgbRatio = 255 / 1023,
+          hueRatio = 360 / 1023,
+          saturationRatio = 100 / 1023;
+
+          socket.on('sp', function (data) {
+            console.log(data);
+        var x = parseInt(data);
+
+        $('#boosh').css({
+          // 'opacity':  x / 10 / 100,
+          left: x,
+          '-webkit-transform': 'rotate(' + x * rotationRatio + 'deg)',
+          'background-color': 'hsl(' + Math.floor(x * hueRatio) + ', ' + Math.floor(x * saturationRatio) + '%, ' + Math.floor(x * saturationRatio) + '%)'
+        });
+      });
+    </script>
+
+    <style type="text/css" media="all">
+      #boosh {
+        position:absolute;
+        /* left:0; */
+        /* top:0; */
+        width:100px;
+        height:100px;
+        background-color:blue;
+      }
+    </style>
+</head>
+<body>
+  <div id="boosh"></div>
+</body>
+</html>
