@@ -8,7 +8,7 @@
 
 */
 
-// set up the essesntials
+// set up the essentials
 var sys = require('util'),
     app = require('express').createServer(),
     io = require('socket.io').listen(app),
