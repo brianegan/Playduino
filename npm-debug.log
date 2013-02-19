@@ -1,0 +1,356 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'duino' ]
+info using npm@1.1.0-3
+info using node@v0.6.10
+verbose config file /Users/suziam/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose cache add [ 'duino', null ]
+silly cache add: name, spec, args [ undefined, 'duino', [ 'duino', null ] ]
+verbose parsed url { pathname: 'duino', path: 'duino', href: 'duino' }
+verbose addNamed [ 'duino', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'duino', '', false ]
+verbose raw, before any munging duino
+verbose url resolving [ 'https://registry.npmjs.org/', './duino' ]
+verbose url resolved https://registry.npmjs.org/duino
+verbose etag "2X757BF31K690M5I3XL0KSC1O"
+http GET https://registry.npmjs.org/duino
+http 304 https://registry.npmjs.org/duino
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"2X757BF31K690M5I3XL0KSC1O"',
+silly get cb     date: 'Mon, 06 Feb 2012 05:06:09 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag duino from cache
+silly name, range, hasData 2 [ 'duino', '', true ]
+silly versions [ 'duino', [ '0.0.0', '0.0.1', '0.0.2', '0.0.3' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-x64-10.7.0',
+verbose bin dist   { shasum: '6699726f121685dce9a516cd336015262bf4e71b',
+verbose bin dist     tarball: 'http://registry.npmjs.org/duino/-/duino-0.0.3.tgz' } ]
+verbose caching /Users/suziam/.npm/duino/0.0.3/package/package.json
+verbose loadDefaults duino@0.0.3
+silly resolved [ { author: 
+silly resolved      { name: 'Cam Pedersen',
+silly resolved        email: 'diffference@gmail.com',
+silly resolved        url: 'http://campedersen.com/' },
+silly resolved     name: 'duino',
+silly resolved     description: 'Arduino framework for mad scientists',
+silly resolved     version: '0.0.3',
+silly resolved     repository: { type: 'git', url: 'git://github.com/ecto/duino.git' },
+silly resolved     main: 'index.js',
+silly resolved     engines: { node: '*' },
+silly resolved     dependencies: { serialport: '*', colors: '*' },
+silly resolved     devDependencies: {},
+silly resolved     _id: 'duino@0.0.3',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.0-3',
+silly resolved     _nodeVersion: 'v0.6.10',
+silly resolved     _defaultsLoaded: true,
+silly resolved     scripts: {} } ]
+info into /Fidelius/Sites/Active/Playduino duino@0.0.3
+info installOne duino@0.0.3
+info unbuild /Fidelius/Sites/Active/Playduino/node_modules/duino
+verbose from cache /Users/suziam/.npm/duino/0.0.3/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/Fidelius/Sites/Active/Playduino/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Fidelius/Sites/Active/Playduino/node_modules/___duino.npm'
+verbose mkdir done: /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Fidelius/Sites/Active/Playduino/node_modules/duino
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar undefined
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/index.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/package.json
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/README.md
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/examples
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/examples/basic.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/examples/button.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/examples/combination.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/examples/led.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/examples/piezo.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/lib
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/lib/board.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/lib/button.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/lib/led.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/lib/piezo.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/lib/servo.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/src
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package/src/du.ino
+verbose gunzed /Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package
+verbose rm'ed /Fidelius/Sites/Active/Playduino/node_modules/duino
+verbose renamed [ '/Fidelius/Sites/Active/Playduino/node_modules/___duino.npm/package',
+verbose renamed   '/Fidelius/Sites/Active/Playduino/node_modules/duino' ]
+verbose caching /Fidelius/Sites/Active/Playduino/node_modules/duino/package.json
+verbose loadDefaults duino@0.0.3
+info preinstall duino@0.0.3
+verbose from cache /Fidelius/Sites/Active/Playduino/node_modules/duino/package.json
+verbose cache add [ 'serialport@*', null ]
+silly cache add: name, spec, args [ undefined, 'serialport@*', [ 'serialport@*', null ] ]
+verbose parsed url { pathname: 'serialport@*',
+verbose parsed url   path: 'serialport@*',
+verbose parsed url   href: 'serialport@*' }
+silly cache add: name, spec, args [ 'serialport', '*', [ 'serialport', '*' ] ]
+verbose parsed url { pathname: '*', path: '*', href: '*' }
+verbose addNamed [ 'serialport', '*' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'serialport', '', false ]
+verbose cache add [ 'colors@*', null ]
+silly cache add: name, spec, args [ undefined, 'colors@*', [ 'colors@*', null ] ]
+verbose parsed url { pathname: 'colors@*', path: 'colors@*', href: 'colors@*' }
+silly cache add: name, spec, args [ 'colors', '*', [ 'colors', '*' ] ]
+verbose parsed url { pathname: '*', path: '*', href: '*' }
+verbose addNamed [ 'colors', '*' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'colors', '', false ]
+verbose raw, before any munging serialport
+verbose url resolving [ 'https://registry.npmjs.org/', './serialport' ]
+verbose url resolved https://registry.npmjs.org/serialport
+verbose etag "501PR5KLMK3Y0VN8BNMHNNZEJ"
+http GET https://registry.npmjs.org/serialport
+verbose raw, before any munging colors
+verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+verbose url resolved https://registry.npmjs.org/colors
+verbose etag "139UU3RF8NNR4JT0X15E0MDCK"
+http GET https://registry.npmjs.org/colors
+http 304 https://registry.npmjs.org/serialport
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"501PR5KLMK3Y0VN8BNMHNNZEJ"',
+silly get cb     date: 'Mon, 06 Feb 2012 05:06:10 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag serialport from cache
+silly name, range, hasData 2 [ 'serialport', '', true ]
+silly versions [ 'serialport',
+silly versions   [ '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.3',
+silly versions     '0.2.0',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.2.4',
+silly versions     '0.2.5',
+silly versions     '0.2.6',
+silly versions     '0.2.7',
+silly versions     '0.2.8',
+silly versions     '0.2.9',
+silly versions     '0.3.0',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.2',
+silly versions     '0.6.3',
+silly versions     '0.6.5',
+silly versions     '0.6.6',
+silly versions     '0.6.7',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.3' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-x64-10.7.0',
+verbose bin dist   { shasum: 'dae69a5455bb4fa95f844aa643d1c9da89949e92',
+verbose bin dist     tarball: 'http://registry.npmjs.org/serialport/-/serialport-0.7.3.tgz' } ]
+verbose caching /Users/suziam/.npm/serialport/0.7.3/package/package.json
+verbose loadDefaults serialport@0.7.3
+http 304 https://registry.npmjs.org/colors
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"139UU3RF8NNR4JT0X15E0MDCK"',
+silly get cb     date: 'Mon, 06 Feb 2012 05:06:10 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag colors from cache
+silly name, range, hasData 2 [ 'colors', '', true ]
+silly versions [ 'colors', [ '0.3.0', '0.5.0', '0.5.1', '0.6.0', '0.6.0-1' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-x64-10.7.0',
+verbose bin dist   { shasum: '6dbb68ceb8bc60f2b313dcc5ce1599f06d19e67a',
+verbose bin dist     tarball: 'http://registry.npmjs.org/colors/-/colors-0.6.0-1.tgz' } ]
+verbose caching /Users/suziam/.npm/colors/0.6.0-1/package/package.json
+verbose loadDefaults colors@0.6.0-1
+silly resolved [ { name: 'serialport',
+silly resolved     version: '0.7.3',
+silly resolved     description: 'Welcome your robotic javascript overlords. Better yet, program them!',
+silly resolved     author: { name: 'Chris Williams', email: 'voodootikigod@gmail.com' },
+silly resolved     main: './serialport',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/voodootikigod/node-serialport.git' },
+silly resolved     scripts: { install: 'cd serialport_native;node-waf configure build;cp build/Release/serialport_native.node ../' },
+silly resolved     engines: { node: '0.6' },
+silly resolved     _id: 'serialport@0.7.3',
+silly resolved     contributors: 
+silly resolved      [ { name: 'Chris Williams', email: 'chris@iterativedesigns.com' },
+silly resolved        { name: 'Esa-Matti Suuronen', email: 'esa-matti@suuronen.org' },
+silly resolved        { name: 'Nathan Rajlich', email: 'nathan@tootallnate.net' },
+silly resolved        { name: 'Rick Waldron', email: 'waldron.rick@gmail.com' },
+silly resolved        { email: 'w1nk' },
+silly resolved        { name: 'Georges-Etienne Legendre', email: 'legege' },
+silly resolved        { name: 'Duane Johnson', email: 'duane.johnson@gmail.com' } ],
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.0-3',
+silly resolved     _nodeVersion: 'v0.6.10',
+silly resolved     _defaultsLoaded: true },
+silly resolved   { name: 'colors',
+silly resolved     description: 'get colors in your node.js console like what',
+silly resolved     version: '0.6.0-1',
+silly resolved     author: { name: 'Marak Squires' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/Marak/colors.js.git' },
+silly resolved     engines: { node: '>=0.1.90' },
+silly resolved     main: 'colors',
+silly resolved     _id: 'colors@0.6.0-1',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.0-3',
+silly resolved     _nodeVersion: 'v0.6.10',
+silly resolved     _defaultsLoaded: true,
+silly resolved     scripts: {} } ]
+info into /Fidelius/Sites/Active/Playduino/node_modules/duino serialport@0.7.3
+info into /Fidelius/Sites/Active/Playduino/node_modules/duino colors@0.6.0-1
+info installOne serialport@0.7.3
+info installOne colors@0.6.0-1
+info unbuild /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport
+info unbuild /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/colors
+verbose from cache /Users/suziam/.npm/serialport/0.7.3/package/package.json
+verbose from cache /Users/suziam/.npm/colors/0.6.0-1/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm'
+verbose mkdir done: /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm 755
+verbose mkdir done: /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/colors
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar undefined
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package/colors.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package/example.html
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package/example.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package/MIT-LICENSE.txt
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package/package.json
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package/ReadMe.md
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package/test.js
+verbose gunzed /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package
+verbose rm'ed /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/colors
+verbose renamed [ '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___colors.npm/package',
+verbose renamed   '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/colors' ]
+verbose caching /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/colors/package.json
+verbose loadDefaults colors@0.6.0-1
+info preinstall colors@0.6.0-1
+verbose from cache /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/colors/package.json
+silly resolved []
+verbose about to build /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/colors
+info build /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/colors
+verbose from cache /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/colors/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules' ]
+info linkStuff colors@0.6.0-1
+verbose linkBins colors@0.6.0-1
+verbose linkMans colors@0.6.0-1
+verbose rebuildBundles colors@0.6.0-1
+info install colors@0.6.0-1
+info postinstall colors@0.6.0-1
+verbose installOne cb colors@0.6.0-1
+silly afterUntar undefined
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/.npmignore
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/AUTHORS
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/changelog.md
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/LICENSE
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/Makefile
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/package.json
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/README.md
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/sampleport
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/serialport.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/examples
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/examples/logger.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/serialport_native
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/serialport_native/serialport_native.cc
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/serialport_native/serialport_native.h
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/serialport_native/wscript
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/tests
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/tests/arduino-ldr-read.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/tests/arduino-ldr-read.pde
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/tests/test_read.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/tests/test_write.js
+silly asyncMap in gTP /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package/tests/test_zwave.js
+verbose gunzed /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package
+verbose rm'ed /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport
+verbose renamed [ '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/___serialport.npm/package',
+verbose renamed   '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport' ]
+verbose caching /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport/package.json
+verbose loadDefaults serialport@0.7.3
+info preinstall serialport@0.7.3
+verbose from cache /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport/package.json
+silly resolved []
+verbose about to build /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport
+info build /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport
+verbose from cache /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules' ]
+info linkStuff serialport@0.7.3
+verbose linkBins serialport@0.7.3
+verbose linkMans serialport@0.7.3
+verbose rebuildBundles serialport@0.7.3
+info install serialport@0.7.3
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "cd serialport_native;node-waf configure build;cp build/Release/serialport_native.node ../"
+silly spawning [ 'sh',
+silly spawning   [ '-c',
+silly spawning     'cd serialport_native;node-waf configure build;cp build/Release/serialport_native.node ../' ],
+silly spawning   '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport' ]
+info serialport@0.7.3 Failed to exec install script
+ERR! error installing serialport@0.7.3
+info unbuild /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport
+verbose from cache /Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules/serialport/package.json
+info preuninstall serialport@0.7.3
+info uninstall serialport@0.7.3
+verbose unbuild serialport@0.7.3 [ false,
+verbose unbuild serialport@0.7.3   '/Fidelius/Sites/Active/Playduino/node_modules',
+verbose unbuild serialport@0.7.3   '/Fidelius/Sites/Active/Playduino/node_modules/duino/node_modules' ]
+info postuninstall serialport@0.7.3
+verbose installOne cb serialport@0.7.3
+verbose about to build /Fidelius/Sites/Active/Playduino/node_modules/duino
+ERR! error installing duino@0.0.3
+info unbuild /Fidelius/Sites/Active/Playduino/node_modules/duino
+verbose from cache /Fidelius/Sites/Active/Playduino/node_modules/duino/package.json
+info preuninstall duino@0.0.3
+info uninstall duino@0.0.3
+verbose unbuild duino@0.0.3 [ true,
+verbose unbuild duino@0.0.3   '/Fidelius/Sites/Active/Playduino/node_modules',
+verbose unbuild duino@0.0.3   '/Fidelius/Sites/Active/Playduino/node_modules' ]
+info postuninstall duino@0.0.3
+verbose installOne cb duino@0.0.3
+ERR! serialport@0.7.3 install: `cd serialport_native;node-waf configure build;cp build/Release/serialport_native.node ../`
+ERR! `sh "-c" "cd serialport_native;node-waf configure build;cp build/Release/serialport_native.node ../"` failed with 1
+ERR! 
+ERR! Failed at the serialport@0.7.3 install script.
+ERR! This is most likely a problem with the serialport package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     cd serialport_native;node-waf configure build;cp build/Release/serialport_native.node ../
+ERR! You can get their info via:
+ERR!     npm owner ls serialport
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 10.7.0
+ERR! command "node" "/usr/local/bin/npm" "install" "duino"
+ERR! cwd /Fidelius/Sites/Active/Playduino
+ERR! node -v v0.6.10
+ERR! npm -v 1.1.0-3
+ERR! code ELIFECYCLE
+ERR! message serialport@0.7.3 install: `cd serialport_native;node-waf configure build;cp build/Release/serialport_native.node ../`
+ERR! message `sh "-c" "cd serialport_native;node-waf configure build;cp build/Release/serialport_native.node ../"` failed with 1
+ERR! errno {}
+verbose exit [ 1, true ]

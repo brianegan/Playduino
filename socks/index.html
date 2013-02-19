@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>SockDuino!!!!!!!!!</title>
+    <title>Arduino and Node = yay</title>
     <script src="/socket.io/socket.io.js"></script>
     <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script>
+      // set up the socket connection
       var socket = io.connect('http://localhost'),
+          // figure out the ratios for each css property
+          // 1023 = the maximum reading from the potentiometer
           rotationRatio =  360 / 1023,
           rgbRatio = 255 / 1023,
           hueRatio = 360 / 1023,
           saturationRatio = 100 / 1023;
 
           socket.on('sp', function (data) {
+            // testing...
             console.log(data);
+        // store the data as it comes in
         var x = parseInt(data);
 
-        $('#boosh').css({
-          // 'opacity':  x / 10 / 100,
+        // do some fancy math to get the css properties changing within a reasonable range
+        $('#box').css({
           left: x,
           '-webkit-transform': 'rotate(' + x * rotationRatio + 'deg)',
           'background-color': 'hsl(' + Math.floor(x * hueRatio) + ', ' + Math.floor(x * saturationRatio) + '%, ' + Math.floor(x * saturationRatio) + '%)'
@@ -26,10 +31,9 @@
     </script>
 
     <style type="text/css" media="all">
-      #boosh {
+      #box {
         position:absolute;
-        /* left:0; */
-        /* top:0; */
+        top:100px;
         width:100px;
         height:100px;
         background-color:blue;
@@ -37,6 +41,6 @@
     </style>
 </head>
 <body>
-  <div id="boosh"></div>
+  <div id="box"></div>
 </body>
 </html>

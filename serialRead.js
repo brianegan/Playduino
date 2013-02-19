@@ -1,4 +1,4 @@
-var sys = require('sys');
+var sys = require('util');
 var serialport = require("serialport");
 var SerialPort = serialport.SerialPort; // localize object constructor
 

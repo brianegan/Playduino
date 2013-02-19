@@ -1,0 +1,12 @@
+[submodule "lib/duino"]
+	path = lib/duino
+	url = https://github.com/ecto/duino.git
+[submodule "lib/socketio"]
+	path = lib/socketio
+	url = https://github.com/LearnBoost/socket.io.git
+[submodule "lib/express"]
+	path = lib/express
+	url = https://github.com/visionmedia/express.git
+[submodule "lib/serialport"]
+	path = lib/serialport
+	url = https://github.com/voodootikigod/node-serialport.git
