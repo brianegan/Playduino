@@ -1,18 +1,18 @@
 /*
-  AnalogReadSerial
- Reads an analog input on pin 0, prints the result to the serial monitor 
+  Analog Input
  
- This example code is in the public domain.
+  Reads analog input, writes to serial
+ 
  */
- int ledPin = 13;
+
+int sensorPin = A0;    // select the input pin for the potentiometer
 
 void setup() {
-  Serial.begin(9600);
-  pinMode(ledPin, OUTPUT);  
+ // nothing needed in the setup
 }
 
 void loop() {
-  int sensorValue = analogRead(A0);
-  Serial.println(sensorValue);
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);    
+  Serial.println(sensorValue);       
 }
-
